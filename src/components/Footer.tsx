@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Facebook, Twitter, Instagram } from 'lucide-react';
@@ -70,7 +69,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-700 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center">
           <p className="text-gray-300 text-sm sm:text-base">
-            © 2024 AnthonyPeterSolutions. All rights reserved. Built with ❤️ in Nairobi, Kenya.
+            © 2025 AnthonyPeterSolutions. All rights reserved. Built with ❤️ in Nairobi, Kenya.
           </p>
         </div>
       </div>
