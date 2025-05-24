@@ -47,7 +47,7 @@ const FeaturedProducts = () => {
     return `KSh ${price.toLocaleString()}`;
   };
 
-  // the products are displayed in a grid layout with 4 columns on large screens, 2 columns on small screens, and 1 column on extra small screens
+  // The products are displayed in a grid layout with 4 columns on large screens, 2 columns on small screens, and 1 column on extra small screens
   return (
     <section className="py-12 sm:py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -60,50 +60,57 @@ const FeaturedProducts = () => {
           </p>
         </div>
 
-      {/* displays the products in a responsive grid layout */}
+        {/* Displays the products in a responsive grid layout */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
-          {/* iterates over the featuredproducts array to render each product */}
           {featuredProducts.map((product) => (
-            <div key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              {/* displays the product image in a conatiner for positioning */}
+            <div
+              key={product.id}
+              className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
+            >
+              {/* Displays the product image in a container for positioning */}
               <div className="relative">
-                <img 
-                  src={product.image} 
+                <img
+                  src={product.image}
                   alt={product.name}
                   className="w-full h-48 sm:h-56 lg:h-64 object-cover"
                 />
                 <div className="absolute top-3 sm:top-4 left-3 sm:left-4 bg-red-500 text-white px-2 py-1 rounded-md text-xs sm:text-sm font-semibold">
-                  {/* calculates and siplays the discount percentage */}
-                  {/* math.round . Rounds the result to the nearest integer */}
-                  {/* original price. calculates the discount fraction */}
-                  {Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)}% OFF
-
+                  {/* Calculates and displays the discount percentage */}
+                  {Math.round(
+                    ((product.originalPrice - product.price) /
+                      product.originalPrice) *
+                      100
+                  )}
+                  % OFF
                 </div>
               </div>
-              
+
               <div className="p-4 sm:p-6">
                 <h3 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 line-clamp-2 leading-tight">
                   {product.name}
                 </h3>
-                
+
                 <div className="flex items-center mb-2">
                   <div className="flex items-center">
-                    {/* it dynamically renders the 5 start icons */}
+                    {/* Dynamically renders the 5 star icons */}
                     {[...Array(5)].map((_, i) => (
-                      <Star 
-                        key={i} 
-                        className={`w-3 h-3 sm:w-4 sm:h-4 ${i < Math.floor(product.rating) ? 'text-yellow-400 fill-current' : 'text-gray-300'}`} 
+                      <Star
+                        key={i}
+                        className={`w-3 h-3 sm:w-4 sm:h-4 ${
+                          i < Math.floor(product.rating)
+                            ? "text-yellow-400 fill-current"
+                            : "text-gray-300"
+                        }`}
                       />
                     ))}
-                    {/* displays the number of reviews and ratings */}
                   </div>
                   <span className="text-xs sm:text-sm text-gray-600 ml-2">
                     {product.rating} ({product.reviews})
                   </span>
                 </div>
-                
+
                 <div className="flex items-center justify-between mb-3 sm:mb-4">
-                  {/* displays the price and original price with a strikethrough */}
+                  {/* Displays the price and original price with a strikethrough */}
                   <div>
                     <span className="text-lg sm:text-xl lg:text-2xl font-bold text-blue-600">
                       {formatPrice(product.price)}
@@ -113,16 +120,19 @@ const FeaturedProducts = () => {
                     </span>
                   </div>
                 </div>
-                
+
                 <div className="flex flex-col sm:flex-row gap-2">
                   <Button className="flex-1 text-sm" size="sm">
                     <ShoppingCart className="w-4 h-4 mr-2" />
                     Add to Cart
                   </Button>
-                  <Button variant="outline" size="sm" asChild className="text-sm">
-                    <Link to={`/products/${product.id}`}>
-                      View
-                    </Link>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    asChild
+                    className="text-sm"
+                  >
+                    <Link to={`/products/${product.id}`}>View</Link>
                   </Button>
                 </div>
               </div>
@@ -132,10 +142,8 @@ const FeaturedProducts = () => {
 
         <div className="text-center mt-8 sm:mt-12">
           <Button size="lg" asChild>
-            {/* allows users to view or load all available products */}
-            <Link to="/products">
-              View All Products
-            </Link>
+            {/* Allows users to view or load all available products */}
+            <Link to="/products">View All Products</Link>
           </Button>
         </div>
       </div>
