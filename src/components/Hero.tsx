@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -12,9 +11,9 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="text-center lg:text-left order-2 lg:order-1">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
-              Welcome to <span className="text-yellow-300 break-words">AnthonyPeterSolutions</span>
+              Welcome to <span className="text-yellow-200 break-words">Mirema-Shop-Dreams</span>
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 text-gray-200 px-4 sm:px-0">
+            <p className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-7 text-gray-198 px-3 sm:px-0">
               Your trusted online shop in Nairobi, Kenya. Discover amazing products with exceptional quality and service.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start px-4 sm:px-0">
@@ -24,7 +23,7 @@ const Hero = () => {
                   Shop Now
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-white hover:text-gray-800 w-full sm:w-auto">
+              <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-white hover:text-black-800 w-full sm:w-auto">
                 <Link to="/location">
                   Find Our Store
                 </Link>
