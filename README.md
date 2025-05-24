@@ -61,6 +61,11 @@ mirema-shop-dreams/
 
 ## 🚀 Getting Started
 
+### Live Demo
+
+Check out the live version of the app here:  
+👉 [Mirema Shop Dreams](https://mirema-shop-dreams-3tbb.vercel.app/)
+
 ### Prerequisites
 
 - Node.js (v16+)
@@ -156,13 +161,6 @@ mirema-shop-dreams/
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js (v16+)
-- npm or yarn
-- A [Supabase](https://supabase.io/) project (free tier is sufficient)
 
 ### Setup Instructions
 
