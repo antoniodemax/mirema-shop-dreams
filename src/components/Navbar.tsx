@@ -58,9 +58,12 @@ const Navbar = () => {
               </Link>
             </Button>
             <Button size="sm" asChild>
-              <Link to="/signup" className="hidden lg:block">Sign Up</Link>
-              <Link to="/signup" className="lg:hidden">Join</Link>
-            </Button>
+  {isMenuOpen ? (
+    <Link to="/signup" className="lg:hidden">Join</Link>
+  ) : (
+    <Link to="/signup" className="hidden lg:block">Sign Up</Link>
+  )}
+</Button>
           </div>
 
           {/* Mobile menu button */}
