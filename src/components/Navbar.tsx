@@ -15,10 +15,10 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 flex-shrink-0">
             <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg sm:text-xl">AP</span>
+              <span className="text-white font-bold text-lg sm:text-xl">MSD</span>
             </div>
-            <span className="text-lg sm:text-xl font-bold text-gray-800 hidden sm:block">AnthonyPeterSolutions</span>
-            <span className="text-sm font-bold text-gray-800 sm:hidden">APS</span>
+            <span className="text-lg sm:text-xl font-bold text-gray-800 hidden sm:block">MiremaShopDreams</span>
+            <span className="text-sm font-bold text-gray-800 sm:hidden">MSD</span>
           </Link>
 
           {/* Desktop Navigation */}
