@@ -14,7 +14,7 @@ const Hero = () => {
               Welcome to <span className="text-yellow-200 break-words">Mirema-Shop-Dreams</span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-7 text-gray-198 px-3 sm:px-0">
-              Your trusted online shop in Nairobi, Kenya. Discover amazing products with exceptional quality and service.
+              Your trusted online shop in Nairobi-Kenya, Mirema. Discover amazing products with exceptional quality and service.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start px-4 sm:px-0">
               <Button size="lg" asChild className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold w-full sm:w-auto">
