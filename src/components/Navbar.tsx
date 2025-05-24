@@ -1,10 +1,11 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ShoppingCart, User, Menu, X, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Navbar = () => {
+  // State to manage mobile menu visibility
+  // The useState hook is used to create a state variable 'isMenuOpen' and a function 'setIsMenuOpen' to update it
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
